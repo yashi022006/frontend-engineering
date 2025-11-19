@@ -1,0 +1,61 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.strength-meter {
+  height: 30px;
+  border-radius: 4px;
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+  line-height: 30px;
+  user-select: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+.strength-weak {
+  width: 33.33%;
+  background-color: #ff4d4d; 
+  color: white;
+}
+
+.strength-medium {
+  width: 66.66%;
+  background-color: #ffae42; 
+  color: black;
+}
+
+.strength-strong {
+  width: 100%;
+  background-color: #38c172; 
+  color: white;
+}
