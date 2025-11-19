@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightslategray;
+}
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.even{
+    padding: 10px;
+    background-color: lightslategray;
+}
+.odd{
+    padding: 10px;
+    background-color: lightgray;
+}

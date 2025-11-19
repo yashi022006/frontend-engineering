@@ -1,0 +1,22 @@
+# Hi there 👋, I'm YASHI UPADHYAY 
+
+💻 **CS Undergrad | DSA + Web Dev Enthusiast**  
+🌱 Currently learning ** Java, and Web Development**  
+🚀 Exploring **Open Source** and solving DSA problems  
+
+---
+
+## 🔹 Tech Stack
+- **Languages:** C, Python, Java(Working)  
+- **Web Dev:** HTML, CSS, JavaScript(Working) 
+- **Tools:** Git, GitHub, VS Code
+
+---
+
+## 🌐 Connect With Me
+- [LinkedIn](https://linkedin.com/in/yourprofile)  
+  
+
+✨ *“Code, Learn, Build, Repeat.”*  
+
+
