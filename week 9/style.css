@@ -1,0 +1,164 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.todo-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 14px 20px;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#addTaskBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#addTaskBtn:hover {
+  transform: translateY(-2px);
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #f8f9fa;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+
+.todo-item.completed {
+  opacity: 0.6;
+  background: #e8f5e8;
+}
+
+.todo-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.todo-controls button {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.todo-controls button:hover {
+  background: #5a6268;
+}
+
+.move-up { background: #007bff; }
+.move-down { background: #28a745; }
+.delete-btn { background: #dc3545; }
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 2px;
+  padding: 10px;
+  background: #8B4513;
+  border-radius: 12px;
+}
+
+.chess-square {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chess-square.light {
+  background: #f0d9b5;
+}
+
+.chess-square.dark {
+  background: #b58863;
+}
+
+.chess-square:hover {
+  transform: scale(1.05);
+}
+
+.chess-square.selected {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}

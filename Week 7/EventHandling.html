@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Week 7: Gallery & Async JS</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <h1>Gallery & Async JavaScript Demo</h1>
+
+    <section>
+      <h2>Image Gallery</h2>
+      <div class="gallery">
+        <div class="main-image-container">
+          <img id="main-image" src="https://via.placeholder.com/600x400?text=Image+1" alt="Main" />
+        </div>
+        <div id="thumbnail-container" class="thumbnails">
+          <img class="thumbnail selected" src="https://via.placeholder.com/150x100?text=Image+1" data-large="https://via.placeholder.com/600x400?text=Image+1" alt="Thumb 1" />
+          <img class="thumbnail" src="https://via.placeholder.com/150x100?text=Image+2" data-large="https://via.placeholder.com/600x400?text=Image+2" alt="Thumb 2" />
+          <img class="thumbnail" src="https://via.placeholder.com/150x100?text=Image+3" data-large="https://via.placeholder.com/600x400?text=Image+3" alt="Thumb 3" />
+          <img class="thumbnail" src="https://via.placeholder.com/150x100?text=Image+4" data-large="https://via.placeholder.com/600x400?text=Image+4" alt="Thumb 4" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Simulated Server Response</h2>
+      <button id="fetchBtn">Fetch Data</button>
+      <pre id="fetchOutput">Click "Fetch Data" to see simulated response.</pre>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

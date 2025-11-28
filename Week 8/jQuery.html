@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Week 8: jQuery Interactivity</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>jQuery Effects Demo</h1>
+
+    <section>
+      <h2>FAQ Section</h2>
+      <div class="faq-item">
+        <div class="faq-question">What is jQuery?</div>
+        <div class="faq-answer">jQuery is a fast, small, and feature-rich JavaScript library.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Why use animations?</div>
+        <div class="faq-answer">Animations make interfaces more engaging and provide visual feedback.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How fast is slideToggle?</div>
+        <div class="faq-answer">It smoothly slides content up and down with customizable speed.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dynamic Styling Demo</h2>
+      <button id="styleBtn">Change Style</button>
+      <div id="styleBox" class="style-box">Click button to change my style dynamically!</div>
+    </section>
+
+    <section class="login-section">
+      <h2>Login Form</h2>
+      <div class="form-container">
+        <form id="loginForm">
+          <input type="email" placeholder="Email" class="form-input" />
+          <input type="password" placeholder="Password" class="form-input" />
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

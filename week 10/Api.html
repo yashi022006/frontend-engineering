@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Week 10: University Finder API</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-graduation-cap"></i> University Finder</h1>
+      <p>Search universities by country name</p>
+    </header>
+
+    <div class="search-section">
+      <input type="text" id="countryInput" placeholder="Enter country name (e.g., United States, India, Germany)" />
+      <button id="searchBtn"><i class="fas fa-search"></i> Search Universities</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <i class="fas fa-spinner fa-spin"></i> Fetching universities...
+    </div>
+
+    <div id="results">
+      <div id="errorMsg" class="error hidden"></div>
+      <div id="universityList"></div>
+    </div>
+
+    <div class="examples">
+      <h3>Try these examples:</h3>
+      <button onclick="searchCountry('United States')">USA</button>
+      <button onclick="searchCountry('India')">India</button>
+      <button onclick="searchCountry('Germany')">Germany</button>
+      <button onclick="searchCountry('United Kingdom')">UK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

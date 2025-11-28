@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.search-section {
+  padding: 40px 30px;
+  background: #f8f9fa;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+#countryInput {
+  flex: 1;
+  padding: 16px 20px;
+  font-size: 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#countryInput:focus {
+  border-color: #667eea;
+}
+
+#searchBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#searchBtn:hover {
+  transform: translateY(-2px);
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #667eea;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#results {
+  padding: 0 30px 30px;
+  min-height: 300px;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border-left: 4px solid #dc3545;
+  margin-bottom: 20px;
+}
+
+.university-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.university-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.university-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.university-website {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.university-website:hover {
+  color: #5a67d8;
+}
+
+.university-state {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.examples {
+  padding: 30px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.examples h3 {
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.examples button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.examples button:hover {
+  background: #218838;
+}
+
+@media (max-width: 768px) {
+  .search-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  
+  #countryInput {
+    margin-bottom: 15px;
+  }
+}
